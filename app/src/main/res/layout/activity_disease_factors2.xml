@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiseaseFactors2"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="18dp">
+
+    <Button
+        android:id="@+id/DiseaseFactors2ButtonPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="30dp"
+        android:text="PREVIOUS STEP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/DiseaseFactors2ButtonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="30dp"
+        android:text="Next Step"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/DiseaseFactors2ButtonPrev" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="320dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="46dp"
+        android:text="Impact of 2 week delay in surgical difficulty/risk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="320dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="348dp"
+        android:layout_marginEnd="46dp"
+        android:text="Impact of 6 week delay in disease outcome "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar6WeekOutcome"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="320dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="384dp"
+        android:layout_marginEnd="46dp"
+        android:max="4"
+        android:progress="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="320dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginEnd="46dp"
+        android:text="Impact of 6 week delay in surgical difficulty/risk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar6WeekDifficulty"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="320dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="476dp"
+        android:layout_marginEnd="46dp"
+        android:max="4"
+        android:progress="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar2WeekDifficulty"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="320dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="46dp"
+        android:max="4"
+        android:progress="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="61dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="124dp"
+        android:text="No Worse"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView49"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="61dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="63dp"
+        android:text="Moderately worse"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView47"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="61dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="63dp"
+        android:text="Worse"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView50"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="61dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="63dp"
+        android:text="Significantly worse"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="61dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="63dp"
+        android:text="Slightly worse"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView46"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+    <SeekBar
+        android:id="@+id/seekBar2WeekOutcome"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="320dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="46dp"
+        android:max="4"
+        android:progress="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="320dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="46dp"
+        android:text="Impact of 2 week delay in disease outcome "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Disease Factors"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

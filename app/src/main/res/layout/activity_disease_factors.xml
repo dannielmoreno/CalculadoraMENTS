@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiseaseFactors">
+
+    <Button
+        android:id="@+id/DiseaseFactorsButtonPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="30dp"
+        android:text="PREVIOUS STEP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="320dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="46dp"
+        android:text="Nonoperative treatment option resource / exposure risk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="61dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="10dp"
+        android:text="Significantly better"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarTreatmentResource" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="64dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:text="61% - 95%"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarTreatmentEffectiveness" />
+
+    <SeekBar
+        android:id="@+id/seekBarTreatmentEffectiveness"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="320dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="45dp"
+        android:max="4"
+        android:progress="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="61dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="10dp"
+        android:text="Significantly worse / not applicable"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarTreatmentResource" />
+
+    <SeekBar
+        android:id="@+id/seekBarTreatmentResource"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="320dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="46dp"
+        android:max="4"
+        android:progress="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="64dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="10dp"
+        android:text="40% - 60%"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarTreatmentEffectiveness" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="61dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="10dp"
+        android:text="Equivalent"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarTreatmentResource" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="61dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="10dp"
+        android:text="Somewhat better"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarTreatmentResource" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="10dp"
+        android:text="100%"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarTreatmentEffectiveness" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="320dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="45dp"
+        android:text="Nonoperative treatment option effectiveness           (% as effective to surgery)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="41dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:text="&lt; 40%"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarTreatmentEffectiveness" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="61dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="10dp"
+        android:text="None available"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarTreatmentEffectiveness" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="61dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="10dp"
+        android:text="Somewhat worse"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarTreatmentResource" />
+
+    <Button
+        android:id="@+id/DiseaseFactorsButtonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="30dp"
+        android:text="Next Step"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/DiseaseFactorsButtonPrev" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Disease Factors"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

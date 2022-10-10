@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Results">
+
+    <Button
+        android:id="@+id/ToHomeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="131dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="30dp"
+        android:text="BACK TO HOME"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/prueba14"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="21dp"
+        android:text="Total Score:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prueba11" />
+
+    <TextView
+        android:id="@+id/totalScore"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="21dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/prueba14"
+        app:layout_constraintTop_toBottomOf="@+id/patientScore" />
+
+    <TextView
+        android:id="@+id/prueba15"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="21dp"
+        android:text="/105"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/totalScore"
+        app:layout_constraintTop_toBottomOf="@+id/prueba13" />
+
+    <TextView
+        android:id="@+id/prueba11"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="21dp"
+        android:text="Patient Factors Score:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prueba8" />
+
+    <TextView
+        android:id="@+id/prueba13"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="21dp"
+        android:text="/40"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/patientScore"
+        app:layout_constraintTop_toBottomOf="@+id/prueba10" />
+
+    <TextView
+        android:id="@+id/patientScore"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="21dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/prueba11"
+        app:layout_constraintTop_toBottomOf="@+id/diseaseScore" />
+
+    <TextView
+        android:id="@+id/prueba8"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="21dp"
+        android:text="Disease Factors Score:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prueba" />
+
+    <TextView
+        android:id="@+id/prueba10"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="21dp"
+        android:text="/30"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/diseaseScore"
+        app:layout_constraintTop_toBottomOf="@+id/prueba4" />
+
+    <TextView
+        android:id="@+id/diseaseScore"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="21dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/prueba8"
+        app:layout_constraintTop_toBottomOf="@+id/procedureScore" />
+
+    <TextView
+        android:id="@+id/prueba4"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="140dp"
+        android:text="/35"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/procedureScore"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/procedureScore"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="140dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/prueba"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Results"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/prueba"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="79dp"
+        android:text="Procedure Factors Score:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

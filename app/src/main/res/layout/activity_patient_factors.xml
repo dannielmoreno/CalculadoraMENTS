@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientFactors">
+
+    <Button
+        android:id="@+id/PatientFactorsButtonPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="30dp"
+        android:text="PREVIOUS STEP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/PatientFactorsButtonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="30dp"
+        android:text="VIEW RESULTS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/PatientFactorsButtonPrev" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="290dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="12dp"
+        android:text="Exposure to COVID-19 positive in last 14 days"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerILISymptoms" />
+
+    <Spinner
+        android:id="@+id/spinnerExposureCovid"
+        android:layout_width="290dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="290dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="12dp"
+        android:text="ILI Symptoms (fever, cough, diarrhea)"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerImmunocompromised" />
+
+    <Spinner
+        android:id="@+id/spinnerILISymptoms"
+        android:layout_width="290dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="290dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="12dp"
+        android:text="Immunocompromised"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDiabetes" />
+
+    <Spinner
+        android:id="@+id/spinnerImmunocompromised"
+        android:layout_width="290dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="290dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="12dp"
+        android:text="Diabetes"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCVDisease" />
+
+    <Spinner
+        android:id="@+id/spinnerDiabetes"
+        android:layout_width="290dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="290dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="12dp"
+        android:text="CV Disease (HTN, CHF, CAD)"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSleepApnea" />
+
+    <Spinner
+        android:id="@+id/spinnerCVDisease"
+        android:layout_width="290dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="290dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="12dp"
+        android:text="Obstructive Sleep Apnea"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerLungDisease" />
+
+    <Spinner
+        android:id="@+id/spinnerSleepApnea"
+        android:layout_width="290dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="290dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="16dp"
+        android:text="Lung Disease (asthma, COPD, CF)"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Age" />
+
+    <EditText
+        android:id="@+id/Age"
+        android:layout_width="111dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="Age (years)"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="54dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="27dp"
+        android:text="Age"
+        android:textAlignment="textStart"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Patient Factors"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerLungDisease"
+        android:layout_width="290dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
