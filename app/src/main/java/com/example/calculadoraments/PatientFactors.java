@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -247,21 +248,26 @@ public class PatientFactors extends AppCompatActivity {
 //                Spinner mSpinnerExposureCovid;
 //                Integer ExposureCovidNum = 0;
 
-                int Age = Integer.parseInt(mEditTextAge.getText().toString());
-                editor.putInt("Age", Age);
+                int Age = 0;
+                if (TextUtils.isEmpty(mEditTextAge.getText())){
+                    mEditTextAge.setError("This field is required!");
+                }else{
+                    Age = Integer.parseInt(mEditTextAge.getText().toString());
+                    editor.putInt("Age", Age);
 
-                editor.putInt("LungDisease", LungDiseaseNum);
-                editor.putInt("SleepApnea", SleepApneaNum);
-                editor.putInt("CVDisease", CVDiseaseNum);
-                editor.putInt("Diabetes", DiabetesNum);
-                editor.putInt("Immunocompromised", ImmunocompromisedNum);
-                editor.putInt("ILISymptoms", ILISymptomsNum);
-                editor.putInt("ExposureCovid", ExposureCovidNum);
+                    editor.putInt("LungDisease", LungDiseaseNum);
+                    editor.putInt("SleepApnea", SleepApneaNum);
+                    editor.putInt("CVDisease", CVDiseaseNum);
+                    editor.putInt("Diabetes", DiabetesNum);
+                    editor.putInt("Immunocompromised", ImmunocompromisedNum);
+                    editor.putInt("ILISymptoms", ILISymptomsNum);
+                    editor.putInt("ExposureCovid", ExposureCovidNum);
 
-                editor.apply();
+                    editor.apply();
 
-                Intent seventhIntent = new Intent(getApplicationContext(), Results.class);
-                startActivity(seventhIntent);
+                    Intent seventhIntent = new Intent(getApplicationContext(), Results.class);
+                    startActivity(seventhIntent);
+                }
 
             }
         });

@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -71,25 +72,71 @@ public class ProcedureFactors extends AppCompatActivity {
         mButtonProcedureFactors.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int ORTime = Integer.parseInt(mEditTextORTime.getText().toString());
-                int LOS = Integer.parseInt(mEditTextLOS.getText().toString());
-                int ICUNeed = Integer.parseInt(mEditTextICUneed.getText().toString());
-                int BloodLoss = Integer.parseInt(mEditTextBloodLoss.getText().toString());
-                int TeamSize = Integer.parseInt(mEditTextTeamSize.getText().toString());
-                int IntubationProbability = Integer.parseInt(mEditTextIntubationProbability.getText().toString());
+                boolean allFilled = true;
+                int ORTime = 0;
+                if (TextUtils.isEmpty(mEditTextORTime.getText())){
+                    mEditTextORTime.setError("This field is required!");
+                    allFilled = false;
+                }else{
+                    ORTime = Integer.parseInt(mEditTextORTime.getText().toString());
+                }
 
-                editor.putInt("ORTime", ORTime);
-                editor.putInt("LOS", LOS);
-                editor.putInt("ICUNeed", ICUNeed);
-                editor.putInt("BloodLoss", BloodLoss);
-                editor.putInt("TeamSize", TeamSize);
-                editor.putInt("IntubationProbability", IntubationProbability);
-                editor.putInt("SurgicalSite", SurgicalSiteNum);
+                int LOS = 0;
+                if (TextUtils.isEmpty(mEditTextLOS.getText())){
+                    mEditTextLOS.setError("This field is required!");
+                    allFilled = false;
+                }else{
+                    LOS = Integer.parseInt(mEditTextLOS.getText().toString());
+                }
 
-                editor.apply();
+                int ICUNeed = 0;
+                if (TextUtils.isEmpty(mEditTextICUneed.getText())){
+                    mEditTextICUneed.setError("This field is required!");
+                    allFilled = false;
+                }else{
+                    ICUNeed = Integer.parseInt(mEditTextICUneed.getText().toString());
+                }
 
-                Intent secondIntent = new Intent(getApplicationContext(), DiseaseFactors.class);
-                startActivity(secondIntent);
+                int BloodLoss = 0;
+                if (TextUtils.isEmpty(mEditTextBloodLoss.getText())){
+                    mEditTextBloodLoss.setError("This field is required!");
+                    allFilled = false;
+                }else{
+                    BloodLoss = Integer.parseInt(mEditTextBloodLoss.getText().toString());
+                }
+
+                int TeamSize = 0;
+                if (TextUtils.isEmpty(mEditTextTeamSize.getText())){
+                    mEditTextTeamSize.setError("This field is required!");
+                    allFilled = false;
+                }else{
+                    TeamSize = Integer.parseInt(mEditTextTeamSize.getText().toString());
+                }
+
+                int IntubationProbability = 0;
+                if (TextUtils.isEmpty(mEditTextIntubationProbability.getText())){
+                    mEditTextIntubationProbability.setError("This field is required!");
+                    allFilled = false;
+                }else{
+                    IntubationProbability = Integer.parseInt(mEditTextIntubationProbability.getText().toString());
+                }
+
+                if (allFilled){
+                    editor.putInt("ORTime", ORTime);
+                    editor.putInt("LOS", LOS);
+                    editor.putInt("ICUNeed", ICUNeed);
+                    editor.putInt("BloodLoss", BloodLoss);
+                    editor.putInt("TeamSize", TeamSize);
+                    editor.putInt("IntubationProbability", IntubationProbability);
+                    editor.putInt("SurgicalSite", SurgicalSiteNum);
+
+                    editor.apply();
+
+                    Intent secondIntent = new Intent(getApplicationContext(), DiseaseFactors.class);
+                    startActivity(secondIntent);
+                }
+
+
 
             }
         });
