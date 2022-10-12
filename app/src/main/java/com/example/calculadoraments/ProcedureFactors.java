@@ -49,7 +49,7 @@ public class ProcedureFactors extends AppCompatActivity {
                 "Abdominopelvic open surgery - supraumbilical",
                 "OHNS/upper - GI/thoracic"
         };
-        Integer[] optionsSurgicalSiteNum = {1, 2, 3, 4};
+        Integer[] optionsSurgicalSiteNum = {1, 2, 3, 4, 5};
         ArrayAdapter<String> arrayAdapter1 = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, optionsSurgicalSite);
         mSpinnerSurgicalSite.setAdapter(arrayAdapter1);
 

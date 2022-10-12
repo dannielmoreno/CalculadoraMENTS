@@ -22,12 +22,14 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="253dp"
-        android:layout_height="46dp"
+        android:layout_width="267dp"
+        android:layout_height="125dp"
         android:text="Scoring System for Medically Necessary, Time-Sensitive Procedures"
         android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/begin_button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
